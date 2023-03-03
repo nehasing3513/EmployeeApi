@@ -27,6 +27,19 @@ namespace employeeApi.Controller
             return CreatedAtAction(nameof(GetEmployees),e);
         }
 
+        //  [HttpPut]
+        //  [Route("{id}")]
+        // public async Task<ActionResult<Employee>> PutEmployees(int id, Employee emp1)
+        // {
+        //     Employee e  = emp!.Employees.Find(id)!;
+        //     e.Id =emp1.Id;
+        //     e.FirstName = emp1.FirstName;
+        //     e.SecondName = emp1.SecondName;
+        //     emp.Entry(emp1).State = EntityState.Modified();
+        //     await emp.SaveChangesAsync();
+        //     return CreatedAtAction(nameof(GetEmployees),e);
+        // }
+
          [HttpDelete]
          [Route("{id}")]
         public async Task<ActionResult<Employee>> DeleteEmployees(int id)
